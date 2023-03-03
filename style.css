@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap');
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.logo-cabecalho{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    margin-right: 32px;
+}
+
+.input-cabecalho{
+    border-radius: 20px;
+    width: 393px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border:none;
+   
+}
+
+input::placeholder{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 16px;
+
+    
+}
+
+.botao-cabecalho{
+    border: 1px solid #2A7AE4;
+    text-decoration: none;
+    padding: 16px 48px;
+    width: 42px;
+    height: 19px;
+    color: #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 1440px;
+    
+}/*----- Estilizando Main -----*/
+
+.banner-centro{
+    background-image: url(./banner-image.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 537px 50px 142px;
+}
+
+.titulo-main{
+    width: 751px;
+    height: 61px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    padding-top: 150px;
+    color: #FFF;
+    padding-bottom: 16px;
+}
+
+.texto-centro{
+    width: 751px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFF;
+    padding-bottom: 16px;
+}
+
+.botao-nav{
+    width: 98px;
+    height: 19px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF;
+    border: 1px solid #2A7AE4;
+    padding: 16px;
+    background-color: #2A7AE4 ;
+}
+
+/*----- section -----*/
+
+
+.section{
+    background-color: #E5E5E5;
+}
+
+.titulo-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 152px 16px 152px;
+    max-width: 1440px;
+}
+
+.classe-produtos{
+    width: 148px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.botao-produtos{
+    color: #2A7AE4;
+    width: 66px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.container-itens{
+    padding-left: 152px;
+    padding-right: 136px;
+    padding-bottom: 64px;
+    
+}
+
+.lista-star-wars{
+    display: flex;
+}
+
+.descricao-item{
+    width: 176px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.preco-item{
+    color: #464646;
+    width: 176px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.link-produto{
+    width: 91px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    text-decoration: none;
+}
+
+.imagem-item{
+    padding-right: 16px;
+}
+
+
+/*------ Estilizando Menu contato -----*/
+
+.menu-contato{
+    background-color: #EAF2FD;
+    width: 1404px;
+    height: 368px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 250px;
+}
+
+.menu-logo{
+    display: flex;
+    align-items: start;
+    width: 250.69px;
+    height: 215px;
+    margin-left: -120px;
+}
+
+.logo-contato{
+    margin: 64px 112px 242px 156.99px;
+}
+
+.contato-links{
+    display: flex;
+    flex-direction: column;
+    margin: 64px 112px 242px 0px;
+}
+
+.links-individuais{
+    color: #464646;
+    width: 176px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.formulario-contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    height: 215px;
+    width: 560px;
+}
+
+.fale-conosco{
+    color: #464646;
+    width: 560px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+.nome-contato{
+    width: 560px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 16px;
+}
+
+input::placeholder{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+textarea::placeholder{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.mensagem-contato{
+    width: 560px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.botao-formulario{
+    
+    width: 165px;
+    text-decoration: none;
+    border: 1px solid #2A7AE4;
+    padding: 16px;
+    text-align: center;
+    background-color: #2A7AE4;
+    color: #FFF;
+}
+
+.rodape{
+    width: 1404px;
+    height: 102px;
+}
+
+.autor{
+    width: 234px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 32px 603px 32px 603px;
+}
+
+@media screen and (max-width: 768px){
+
+    .header{
+        width: 768px;
+        height: 72px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        width: 109.25px;
+        height: 30.82px;
+    }
+
+    .input-cabecalho{
+        width: 272px;
+        height: 40px;
+    }
+
+    .botao-cabecalho{
+        padding: 14px 70px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        
+        
+    }
+
+    /*----- BANNER CENTRO -----*/
+
+    .banner-centro{
+        margin-left: -100px;
+        background-image: url(./banner-image.png);
+    }
+    
+    
+    /*----- SECTION ------*/
+
+    .titulo-produtos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 32px 16px 32px;
+    }
+
+    #imagem-corte{
+        display: none;
+    }
+
+    .lista-star-wars{
+        display: flex;
+        justify-content: space-around;
+        margin: 0px ;
+    
+    }
+    
+    .imagem-item{
+        padding-right: 8px;
+        
+    }
+
+    /*----- MENU CONTATO -----*/
+
+    .menu-contato{
+        width: 768px;
+        height: 364px;
+        display: flex;
+        justify-content: space-around;
+        max-width: 768px;
+        gap: 0;
+    }
+
+    .menu-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo-contato{
+        margin: 55px 0 0 100px;
+    }
+
+    .contato-links{
+        margin: 0 0 0 110px;
+    }
+
+    .formulario-contato{
+        width: 434px;
+    }
+
+    .fale-conosco{
+        width: 434px;
+        max-width: 434px;
+        
+    }
+    .nome-contato{
+        width: 434px;
+    }
+
+    .mensagem-contato{
+        width: 434px;
+        padding-right: none;
+        
+    }
+
+    /*----- ESTILIZANDO O FOOTER ------*/
+
+    .rodape{
+        width: 768px;
+        height: 102px;
+        
+    }
+
+    .autor{
+        width: 234px;
+        display: block;
+        margin: 32px auto 0px auto;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    .header{
+        width: 360px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    
+    }
+
+    .input-cabecalho{
+        display: none;
+    }
+
+    .logo{
+        width: 97.16px;
+    }
+
+    .botao-cabecalho{
+        padding: 14px 50px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /*----- Estilizando banner centro -----*/
+
+    .banner-centro{
+        background-image: url(./banner-image.png);
+        width: 360px;
+        height: 192px;
+    }
+    
+    .titulo-main{
+        width: 328px;
+        height: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .texto-centro{
+        width: 328px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .botao-nav{
+        width: 119px;
+    height: 40px;
+    }
+
+    #imagem-corte{
+        display: none;
+    }
+}
+
+

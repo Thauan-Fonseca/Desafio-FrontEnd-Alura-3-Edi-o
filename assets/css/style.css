@@ -3,6 +3,7 @@
 body{
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 header{
@@ -349,6 +350,35 @@ textarea::placeholder{
     margin: 16px auto ;
 }
 
+@media screen and (max-width: 1024px){
+    
+    .lista-star-wars{
+        margin-left: 120px;
+    }
+    
+    #imagem-corte{
+        display: none;
+    }
+
+    /* ---- menu contato ----*/
+
+    .formulario-contato{
+        margin-left: 200px;
+    }
+
+    .fale-conosco{
+        width: 360px;
+    }
+
+    .nome-contato{
+        width: 360px;
+    }
+
+    .mensagem-contato{
+        width: 360px;
+    }
+}
+
 @media screen and (max-width: 768px){
 
     .header{
@@ -558,6 +588,8 @@ textarea::placeholder{
         flex-direction: column;
         height: 680px;
         align-items: center;
+        max-width: 425px;
+        width: 100%;
         
     
         .menu-logo{

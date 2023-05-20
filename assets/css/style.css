@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap');
 
-
+body{
+    display: block;
+    margin: auto;
+}
 
 header{
     display: flex;
@@ -8,6 +11,12 @@ header{
     justify-content: space-around;
     margin-top: 32px;
     margin-bottom: 32px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+#lupa{
+    display: none;
 }
 
 .logo-cabecalho{
@@ -26,6 +35,7 @@ header{
     height: 40px;
     background-color: #F5F5F5;
     border:none;
+
    
 }
 
@@ -35,7 +45,6 @@ input::placeholder{
     font-size: 14px;
     line-height: 16px;
     padding-left: 16px;
-
     
 }
 
@@ -53,15 +62,20 @@ input::placeholder{
     line-height: 19px;
     max-width: 1440px;
     
-}/*----- Estilizando Main -----*/
+}
+
+/*----- Estilizando Main -----*/
 
 .banner-centro{
-    background-image: url(./banner-image.png);
+    background-image: url(../imagens/banner-image.png);
+    width: 100%;
+    max-width: 1440px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 537px 50px 142px;
+    margin-bottom: 64px;
+    
 }
 
 .titulo-main{
@@ -74,7 +88,8 @@ input::placeholder{
     line-height: 61px;
     padding-top: 150px;
     color: #FFF;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-left: 64px;
 }
 
 .texto-centro{
@@ -86,7 +101,8 @@ input::placeholder{
     font-size: 22px;
     line-height: 26px;
     color: #FFF;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-left: 64px;
 }
 
 .botao-nav{
@@ -102,6 +118,8 @@ input::placeholder{
     border: 1px solid #2A7AE4;
     padding: 16px;
     background-color: #2A7AE4 ;
+    margin-left: 64px;
+    margin-bottom: 16px;
 }
 
 /*----- section -----*/
@@ -109,14 +127,15 @@ input::placeholder{
 
 .section{
     background-color: #E5E5E5;
+    margin: auto;
 }
 
 .titulo-produtos{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 152px 16px 152px;
-    max-width: 1440px;
+    margin: 32px 120px 16px 120px;
+    max-width: 1113px;
 }
 
 .classe-produtos{
@@ -129,6 +148,8 @@ input::placeholder{
     line-height: 38px;
     color: #464646;
 }
+
+
 
 .botao-produtos{
     color: #2A7AE4;
@@ -143,14 +164,15 @@ input::placeholder{
 }
 
 .container-itens{
-    padding-left: 152px;
-    padding-right: 136px;
-    padding-bottom: 64px;
+    max-width: 1113px;
+    margin-left: 10px;
     
 }
 
 .lista-star-wars{
     display: flex;
+    max-width: 1113px;
+    margin: 32px 120px 16px 70px;
 }
 
 .descricao-item{
@@ -196,11 +218,14 @@ input::placeholder{
 
 .menu-contato{
     background-color: #EAF2FD;
-    width: 1404px;
+    width: 100%;
+    max-width: 1440px;
     height: 368px;
     display: flex;
+    flex-direction: row;
     align-items: start;
     justify-content: space-around;
+    margin-top: 64px;
     gap: 250px;
 }
 
@@ -302,9 +327,13 @@ textarea::placeholder{
     color: #FFF;
 }
 
+/* ---- footer ----*/
+
 .rodape{
-    width: 1404px;
-    height: 102px;
+    max-width: 1404px;
+    width: 100%;
+    height: 90px;
+    
 }
 
 .autor{
@@ -316,25 +345,26 @@ textarea::placeholder{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    margin: 32px 603px 32px 603px;
+    display: block;
+    margin: 16px auto ;
 }
 
 @media screen and (max-width: 768px){
 
     .header{
-        width: 768px;
+        max-width: 768px;
         height: 72px;
         display: flex;
         justify-content: space-around;
     }
 
     .logo{
-        width: 109.25px;
+        max-width: 109.25px;
         height: 30.82px;
     }
 
     .input-cabecalho{
-        width: 272px;
+        max-width: 272px;
         height: 40px;
     }
 
@@ -353,8 +383,9 @@ textarea::placeholder{
     /*----- BANNER CENTRO -----*/
 
     .banner-centro{
-        margin-left: -100px;
-        background-image: url(./banner-image.png);
+        max-width: 768px;
+        width: 100%;
+        background-image: url(../imagens/banner-image.png);
     }
     
     
@@ -364,8 +395,13 @@ textarea::placeholder{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0px 32px 16px 32px;
+        margin: 32px 32px 16px 32px;
     }
+
+    .lista-produtos{
+        max-width: 768px;
+    }
+
 
     #imagem-corte{
         display: none;
@@ -379,18 +415,23 @@ textarea::placeholder{
     }
     
     .imagem-item{
-        padding-right: 8px;
+        margin-left: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
         
     }
 
     /*----- MENU CONTATO -----*/
 
     .menu-contato{
-        width: 768px;
+        max-width: 768px;
+        width: 100%;
         height: 364px;
         display: flex;
         justify-content: space-around;
         max-width: 768px;
+        margin-top: 32px;
         gap: 0;
     }
 
@@ -409,7 +450,7 @@ textarea::placeholder{
     }
 
     .formulario-contato{
-        width: 434px;
+        max-width: 434px;
     }
 
     .fale-conosco{
@@ -430,25 +471,27 @@ textarea::placeholder{
     /*----- ESTILIZANDO O FOOTER ------*/
 
     .rodape{
-        width: 768px;
+        max-width: 768px;
+        width: 100%;
         height: 102px;
         
     }
 
     .autor{
-        width: 234px;
+        max-width: 234px;
         display: block;
         margin: 32px auto 0px auto;
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 426px){
 
     .header{
-        width: 360px;
+        max-width: 426px;
+        width: 90%;
         height: 72px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 20px;
     
     }
@@ -462,6 +505,7 @@ textarea::placeholder{
     }
 
     .botao-cabecalho{
+        width: 50px;
         padding: 14px 50px;
         text-align: center;
         font-family: 'Raleway';
@@ -471,23 +515,29 @@ textarea::placeholder{
         line-height: 16px;
     }
 
+    #lupa{
+        display:flex;
+    }
+
     /*----- Estilizando banner centro -----*/
 
     .banner-centro{
-        background-image: url(./banner-image.png);
-        width: 360px;
+        background-image: url(../imagens/banner-image.png);
+        max-width: 425px;
+        width: 100%;
         height: 192px;
     }
     
     .titulo-main{
-        width: 328px;
+        max-width: 328px;
         height: 26px;
         font-size: 22px;
         line-height: 26px;
+        margin-top: -82px;
     }
 
     .texto-centro{
-        width: 328px;
+        max-width: 328px;
         height: 16px;
         font-size: 14px;
         line-height: 16px;
@@ -498,9 +548,47 @@ textarea::placeholder{
     height: 40px;
     }
 
-    #imagem-corte{
+    
+    #corte-celular{
         display: none;
     }
+    /* ---- menu contato ----*/
+    
+    .menu-contato{
+        flex-direction: column;
+        height: 680px;
+        align-items: center;
+        
+    
+        .menu-logo{
+            margin-top: -64px;
+        }
+        
+        .formulario-contato{
+            max-width: 328px;
+            width: 100%;
+            margin-left: 15%;
+        }
+        
+        .fale-conosco{
+            max-width: 328px;
+        }
+        
+        .nome-contato{
+            max-width: 328px;
+            width: 80%;
+        }
+        
+        .mensagem-contato{
+            max-width: 328px;
+            width: 80%;
+            margin-right: -64px;
+        }
+    }
 }
+
+
+
+
 
 
